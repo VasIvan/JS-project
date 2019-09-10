@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tehtava2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="jsstyle.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li class="parent">
+          <a href="#">Opi !</a>
+          <ul class="child">
+            <li>
+              <a href="Tehtava1.html"
+                >Syntaksi, muuttujat, tilat ja kommentit</a
+              >
+            </li>
+            <li><a href="Tehtava2.html">Tietotyypit</a></li>
+            <li><a href="Tehtava3.html">Laskenta operaattorit</a></li>
+            <li><a href="Tehtava4.html">Vertailu operaattorit</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">If / Switch / Array</a>
+          <ul class="child">
+            <li><a href="Tehtava5.html">If lause</a></li>
+            <li><a href="Tehtava6.html">Switch case</a></li>
+            <li><a href="Tehtava7.html">Array</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Functions</a>
+          <ul class="child">
+            <li><a href="Tehtava8.html">Funtion()</a></li>
+            <li><a href="Tehtava9.html">Funtion(x,y)</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">(Do) While / For</a>
+          <ul class="child">
+            <li><a href="Tehtava10.html">While</a></li>
+            <li><a href="Tehtava11.html">For</a></li>
+            <li><a href="Tehtava12.html">Do While</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Laskutoimitukset</a>
+          <ul class="child">
+            <li><a href="Tehtava13.html">Laskutoimitukset</a></li>
+            <li><a href="Tehtava14.html">Strings</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Extra</a>
+          <ul class="child">
+            <li><a href="Tehtava15.html">Good Morning</a></li>
+            <li><a href="Tehtava16.html">Lotto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- TITLE -->
+
+    <div id="title">
+      <h1>TIETOTYYPIT</h1>
+      <br /><br />
+    </div>
+
+    <!-- CONTENT -->
+
+    <p><i>
+      JavaScriptissä on kaksi erilaista tietoa: primitiivit ja esineet.
+      Primitiivinen on yksinkertaisesti tietotyyppi, joka ei ole objekti, eikä
+      sillä ole menetelmiä. </i>
+    </p>
+
+    <h2>Primitiivit</h2>
+    <hr />
+    <p>JS: ssä on kuusi primitiivistä tietotyyppiä:</p>
+    <ol>
+      <li>
+        <h3>Boolean</h3>
+        Boolean edustaa vain yhtä kahdesta arvosta: <b>true</b> tai
+        <b>false</b>.<br />
+        Ajattele boolean kuin on / off tai yes / no-kytkin.
+        <h4>Esimerkiksi:</h4>
+        var boo1 = true;<br />
+        var boo2 = false;
+      </li>
+      <br />
+
+      <li>
+        <h3>Number</h3>
+        JavaScriptissä on vain yksi tyyppi. Numerot voidaan kirjoittaa
+        desimaalipisteellä tai ilman sitä.<br />
+        Numero voi olla myös <b>+ Infinity</b>, <b>-Infinity</b> ja
+        <b>NaN (ei numero)</b>.
+        <h4>Esimerkiksi:</h4>
+        var num1 = 32; <br />
+        var num2 = +Infinity;
+      </li>
+      <br />
+
+      <li>
+        <h3>String</h3>
+        Merkkijonoja(Strings) käytetään tekstin tallentamiseen.
+        Merkkijonojen(Stringsin) on oltava joko kaksinkertaisia tai yksittäisiä
+        lainausmerkkejä. JS: ssä merkkijonot(stringsit) ovat muuttumattomia
+        (niitä ei voi muuttaa).
+        <h4>Esimerkiksi:</h4>
+        var str1 = 'hello, it is me'; <br />
+        var str2 = "hello, it's me";
+      </li>
+      <br />
+
+      <li>
+        <h3>Null</h3>
+        Merkkijonoja(Strings) käytetään tekstin tallentamiseen.
+        Merkkijonojen(Stringsin) on oltava joko kaksinkertaisia tai yksittäisiä
+        lainausmerkkejä. JS: ssä merkkijonot(stringsit) ovat muuttumattomia
+        (niitä ei voi muuttaa).
+        <h4>Esimerkiksi:</h4>
+        var testVar; <br />
+        console.log(testVar); // undefined
+      </li>
+      <br />
+
+      <li>
+        <h3>Undefined</h3>
+        'Undefined' tietotyypillä voi olla vain yksi arvo - erityinen arvo
+        'undefined'. Jos muuttuja on ilmoitettu, mutta sille ei ole annettu
+        arvoa, sillä on arvo "undefined".
+        <h4>Esimerkiksi:</h4>
+        var str1 = 'hello, it is me'; <br />
+        var str2 = "hello, it's me";
+      </li>
+      <br />
+
+      <li>
+        <h3>Symbol</h3>
+        Symboli on ainutlaatuinen ja muuttumaton tietotyyppi ja sitä voidaan
+        käyttää tunnisteena objektin ominaisuuksiin. Symboliobjekti on
+        symboli-primitiivisen datatyypin implisiittinen objektikääre.
+        <h4>Esimerkiksi:</h4>
+        const mySymbol = Symbol('mySymbol');
+      </li>
+      <br />
+    </ol>
+
+    <h2>Objectit</h2>
+    <hr />
+    <p>
+      Objekti on järjestämätön luettelo primitiivisistä tietotyypeistä (ja
+      joskus viitetiedostotyypeistä), jotka tallennetaan sarja-arvopareiksi.
+      Kutakin luettelon kohdetta kutsutaan ominaisuudeksi (toimintoja kutsutaan
+      menetelmiksi). <br> <br>
+      <b> Esimerkiksi:</b> <br><br> var myFirstObject = {firstName: "Richard", favoriteAuthor: "Conrad"};</p>
+
+            
+
+      <!-- FOOTER -->
+    </p>
+
+    <footer>
+      <p>\ / / Vasil Ivanov &#169; 2019</p>
+    </footer>
+
+    <!-- https://codeburst.io/javascript-data-types-explained-347555cd2d4d
+            
+            https://www.tutorialrepublic.com/javascript-tutorial/javascript-data-types.php -->
+  </body>
+</html>

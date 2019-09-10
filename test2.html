@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="jsstyle.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li class="parent">
+          <a href="#">Opi !</a>
+          <ul class="child">
+            <li>
+              <a href="Tehtava1.html"
+                >Syntaksi, muuttujat, tilat ja kommentit</a
+              >
+            </li>
+            <li><a href="Tehtava2.html">Tietotyypit</a></li>
+            <li><a href="Tehtava3.html">Laskenta operaattorit</a></li>
+            <li><a href="Tehtava4.html">Vertailu operaattorit</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">If / Switch / Array</a>
+          <ul class="child">
+            <li><a href="Tehtava5.html">If lause</a></li>
+            <li><a href="Tehtava6.html">Switch case</a></li>
+            <li><a href="Tehtava7.html">Array</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Functions</a>
+          <ul class="child">
+            <li><a href="Tehtava8.html">Funtion()</a></li>
+            <li><a href="Tehtava9.html">Funtion(x,y)</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">(Do) While / For</a>
+          <ul class="child">
+            <li><a href="Tehtava10.html">While</a></li>
+            <li><a href="Tehtava11.html">For</a></li>
+            <li><a href="Tehtava12.html">Do While</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Laskutoimitukset</a>
+          <ul class="child">
+            <li><a href="Tehtava13.html">Laskutoimitukset</a></li>
+            <li><a href="Tehtava14.html">Strings</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Extra</a>
+          <ul class="child">
+            <li><a href="Tehtava15.html">Good Morning</a></li>
+            <li><a href="Tehtava16.html">Lotto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- TITLE -->
+
+    <div id="title">
+      <h1>SWITCH CASE</h1>
+      <br /><br />
+    </div>
+
+    <!-- CONTENT -->
+
+
+
+    <div class="gr-cont">
+        <!-- CONTENT / LEFT / BUTTON-->
+        <div class="gr-it">
+          <p id="textbtn">
+            Press Here -->
+            <button style="font-size:24px" onclick="myButton()" class="button">
+              <i class="fa fa-power-off"></i>
+            </button>
+            <-- Press Here
+          </p>
+  
+
+          <p id="date">
+              The winning numbers of this week are (the last two numbers are bonus
+              numbers):
+            </p>
+            <table border="1">
+              <tr>
+                <th>Lotto</th>
+                <th>№1</th>
+                <th>№2</th>
+                <th>№3</th>
+                <th>№4</th>
+                <th>№5</th>
+                <th>№6</th>
+                <th>№7</th>
+              </tr>
+        
+              <tr>
+                <td>Winners:</td>
+                <td id="n1"></td>
+                <td id="n2"></td>
+                <td id="n3"></td>
+                <td id="n4"></td>
+                <td id="n5"></td>
+                <td id="n6"></td>
+                <td id="n7"></td>
+              </tr>
+        
+              <tr>
+                <th>Bonus</th>
+                <th>№1</th>
+                <th>№2</th>
+              </tr>
+        
+              <tr>
+                <td>Winners:</td>
+                <td id="n8"></td>
+                <td id="n9"></td>
+              </tr>
+            </table>
+
+          
+        </div>
+
+
+
+
+
+
+
+    <!-- CONTENT / RIGHT / SCRIPT-->
+ <div class="gr-it">
+    <h2>Script</h2>
+    <div id="code">
+      
+        &lt;script&gt; <br />
+        <br />
+        var d = new Date().getDate(); <br />
+        var m = new Date().getMonth(); <br />
+        var y = new Date().getFullYear(); <br />
+        <br />
+    
+        document.getElementById("date").innerHTML = "The Winning numbers of today "
+        + d + "." + m + "." + y + " are: "; <br />
+        <br />
+    
+        function myButton() { <br />
+        a = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+        40 ]; <br />
+    
+        var b = []; <br />
+        var q = ""; <br />
+        var i; <br />
+        for (i = 1; i <= 9; i++) { <br />
+        var c = Math.floor(Math.random() * (41 - i)); <br />
+        var f = a.splice(c, 1); <br />
+        b.push(f); <br />
+        q = "&lt;b&gt;" + f + "&lt;/b&gt;"; <br />
+        document.getElementById("n" + i).innerHTML = q; <br />
+        } <br />
+        } <br />
+        <br />
+        &lt;/script&gt;
+  
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>\ / / Vasil Ivanov &#169; 2019</p>
+      </footer>
+  
+
+
+
+
+
+
+
+
+    <script>
+      var d = new Date().getDate();
+      var m = new Date().getMonth();
+      var y = new Date().getFullYear();
+
+      document.getElementById("date").innerHTML =
+        "The Winning numbers of today " + d + "." + m + "." + y + " are: ";
+
+      function myButton() {
+        a = [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ];
+
+        var b = [];
+        var q = "";
+        var i;
+        for (i = 1; i <= 9; i++) {
+          var c = Math.floor(Math.random() * (41 - i));
+          var f = a.splice(c, 1);
+          b.push(f);
+          q = "<b>" + f + "</b>";
+          document.getElementById("n" + i).innerHTML = q;
+        }
+      }
+    </script>
+
+    
+    
+
+
+
+
+
+
+
+  </body>
+</html>

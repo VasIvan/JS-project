@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tehtava13</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="jsstyle.css">
+  </head>
+  <body>
+
+
+
+
+<!--NAVBAR-->
+<nav>
+    <ul>
+      <li><a href="index.html">Etusivu</a></li>
+      <li class="parent">
+        <a href="#">Opi !</a>
+        <ul class="child">
+          <li>
+            <a href="Tehtava1.html"
+              >Syntaksi, muuttujat, tilat ja kommentit</a
+            >
+          </li>
+          <li><a href="Tehtava2.html">Tietotyypit</a></li>
+          <li><a href="Tehtava3.html">Laskenta operaattorit</a></li>
+          <li><a href="Tehtava4.html">Vertailu operaattorit</a></li>
+        </ul>
+      </li>
+      <li class="parent">
+        <a href="#">If / Switch / Array</a>
+        <ul class="child">
+          <li><a href="Tehtava5.html">If lause</a></li>
+          <li><a href="Tehtava6.html">Switch case</a></li>
+          <li><a href="Tehtava7.html">Array</a></li>
+        </ul>
+      </li>
+      <li class="parent">
+        <a href="#">Functions</a>
+        <ul class="child">
+          <li><a href="Tehtava8.html">Funtion()</a></li>
+          <li><a href="Tehtava9.html">Funtion(x,y)</a></li>
+        </ul>
+      </li>
+      <li class="parent">
+        <a href="#">(Do) While / For</a>
+        <ul class="child">
+          <li><a href="Tehtava10.html">While</a></li>
+          <li><a href="Tehtava11.html">For</a></li>
+          <li><a href="Tehtava12.html">Do While</a></li>
+        </ul>
+      </li>
+      <li class="parent">
+        <a href="#">Laskutoimitukset</a>
+        <ul class="child">
+          <li><a href="Tehtava13.html">Laskutoimitukset</a></li>
+          <li><a href="Tehtava14.html">Strings</a></li>
+        </ul>
+      </li>
+      <li class="parent">
+        <a href="#">Extra</a>
+        <ul class="child">
+          <li><a href="Tehtava15.html">Good Morning</a></li>
+          <li><a href="Tehtava16.html">Lotto</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- TITLE -->
+
+  <div id="title">
+    <h1>LASKUTOIMITUS</h1>
+    <br /><br />
+  </div>
+
+  
+
+
+
+
+
+
+     <!-- CONTENT -->
+
+
+
+     <div class="gr-cont">
+        <!-- CONTENT / LEFT / BUTTON-->
+        <div class="gr-it">
+          <p id="textbtn">
+            Press Here -->
+            <button style="font-size:24px" onclick="myNumber1()" class="button">
+              <i class="fa fa-power-off"></i>
+            </button>
+            <-- Press Here
+          </p>
+
+
+
+          <table border="1">
+              <tr>
+                <th>Luku 1</th>
+                <th>Luku 2</th>
+                <th>Luku 3</th>
+              </tr>
+    
+              <tr>
+                <td id="n1"></td>
+                <td id="n2"></td>
+                <td id="n3"></td>
+              </tr>
+
+          </table>
+
+      
+          <p id='summa'></p>
+          <p id='erotus'></p>
+          <p id='tulo'></p>
+          <p id='keskiarvo'></p>
+    
+        </div>
+
+
+
+
+
+
+    
+    <!-- CONTENT / RIGHT / SCRIPT-->
+ <div class="gr-it">
+    <h2>Script</h2>
+    <div id="code">
+      
+        &lt;script&gt; <br> <br>
+        function myNumber1() { <br>
+          var a = Math.floor(Math.random() * 21); <br>
+          var b = Math.floor(Math.random() * 21); <br>
+          var c = Math.floor(Math.random() * 21); <br> <br>
+    
+          document.getElementById("n1").innerHTML = a; <br>
+          document.getElementById("n2").innerHTML = b; <br>
+          document.getElementById("n3").innerHTML = c; <br> <br>
+    
+    
+          document.getElementById('summa').innerHTML = 'Lukujen summa on: ' + a + ' + ' + b + ' + ' + c + ' = ' + (a + b + c); <br>
+          document.getElementById('erotus').innerHTML = 'Lukujen erotus on: ' + a + ' - ' + b + ' - ' + c + ' = ' + (a - b - c); <br>
+          document.getElementById('tulo').innerHTML = 'Lukujen tulo on: ' + a + ' * ' + b + ' * ' + c + ' = ' + (a * b * c); <br>
+          document.getElementById('keskiarvo').innerHTML = 'Lukujen keskiarvo on: ' + '(' + a + ' + ' + b + ' + ' + c+')'+'/ 3' + ' = ' + ((a + b + c)/3); <br>
+        } <br> <br>
+        &lt;/script&gt;
+  
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>\ / / Vasil Ivanov &#169; 2019</p>
+      </footer>
+
+
+
+
+    <script>
+      function myNumber1() {
+        var a = Math.floor(Math.random() * 21);
+        var b = Math.floor(Math.random() * 21);
+        var c = Math.floor(Math.random() * 21);
+
+        document.getElementById("n1").innerHTML = a;
+        document.getElementById("n2").innerHTML = b;
+        document.getElementById("n3").innerHTML = c;
+
+
+        document.getElementById('summa').innerHTML = 'Lukujen summa on: ' + a + ' + ' + b + ' + ' + c + ' = ' + (a + b + c);
+        document.getElementById('erotus').innerHTML = 'Lukujen erotus on: ' + a + ' - ' + b + ' - ' + c + ' = ' + (a - b - c);
+        document.getElementById('tulo').innerHTML = 'Lukujen tulo on: ' + a + ' * ' + b + ' * ' + c + ' = ' + (a * b * c);
+        document.getElementById('keskiarvo').innerHTML = 'Lukujen keskiarvo on: ' + '(' + a + ' + ' + b + ' + ' + c+')'+'/ 3' + ' = ' + ((a + b + c)/3);
+      }
+    </script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="jsstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="title">
+      <h1>JAVASCRIPT</h1>
+      <br /><br />
+    </div>
+
+    <!--CONTENT-->
+
+    <div class="gr-cont">
+      <div class="gr-it">
+        <p id="textbtn">
+          Press Here -->
+          <button style="font-size:24px" onclick="myButton()" class="button">
+            <i class="fa fa-power-off"></i>
+          </button>
+          <-- Press Here
+        </p>
+        <p id="result"></p>
+      </div>
+
+      <div class="gr-it">
+        <h2>Script</h2>
+        <div id="code">
+          &lt;script&gt; <br />
+          <br />
+          function myButton() { <br />
+          var x = 0; <br />
+          var y; <br />
+          <br />
+
+          do { <br />
+          for (y = 0; y <= x; y++) { <br />
+          document.getElementById("result").innerHTML += x; <br />
+          } <br />
+          document.getElementById("result").innerHTML += "&lt;br&gt;"; <br />
+          x++; <br />
+          } while (x <= 9); <br />
+
+          x = 9; <br />
+          do { <br />
+          for (y = 0; y <= x; y++) { <br />
+          document.getElementById("result").innerHTML += x; <br />
+          } <br />
+          document.getElementById("result").innerHTML += "&lt;br&gt;"; <br />
+
+          x--; <br />
+          } while (x >= 0); <br />
+          } <br />
+          <br />
+          &lt;/script&gt;
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>\ / / Vasil Ivanov &#169; 2019</p>
+    </footer>
+
+    <!--
+    https://stackoverflow.com/questions/4743970/how-do-i-write-a-variable-a-certain-amount-of-times
+
+                var x=5;
+                var chars="Hi! ";
+                var i;
+                for (i = 0; i < x; i++) document.write(chars);
+
+
+-->
+
+    <script>
+      function myButton() {
+        var x = 0;
+        var y;
+
+        do {
+          for (y = 0; y <= x; y++) {
+            document.getElementById("result").innerHTML += x;
+          }
+          document.getElementById("result").innerHTML += "<br>";
+          x++;
+        } while (x <= 9);
+
+        x = 9;
+        do {
+          for (y = 0; y <= x; y++) {
+            document.getElementById("result").innerHTML += x;
+          }
+          document.getElementById("result").innerHTML += "<br>";
+
+          x--;
+        } while (x >= 0);
+      }
+    </script>
+  </body>
+</html>

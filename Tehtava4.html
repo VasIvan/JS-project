@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tehtava4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="jsstyle.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li class="parent">
+          <a href="#">Opi !</a>
+          <ul class="child">
+            <li>
+              <a href="Tehtava1.html"
+                >Syntaksi, muuttujat, tilat ja kommentit</a
+              >
+            </li>
+            <li><a href="Tehtava2.html">Tietotyypit</a></li>
+            <li><a href="Tehtava3.html">Laskenta operaattorit</a></li>
+            <li><a href="Tehtava4.html">Vertailu operaattorit</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">If / Switch / Array</a>
+          <ul class="child">
+            <li><a href="Tehtava5.html">If lause</a></li>
+            <li><a href="Tehtava6.html">Switch case</a></li>
+            <li><a href="Tehtava7.html">Array</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Functions</a>
+          <ul class="child">
+            <li><a href="Tehtava8.html">Funtion()</a></li>
+            <li><a href="Tehtava9.html">Funtion(x,y)</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">(Do) While / For</a>
+          <ul class="child">
+            <li><a href="Tehtava10.html">While</a></li>
+            <li><a href="Tehtava11.html">For</a></li>
+            <li><a href="Tehtava12.html">Do While</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Laskutoimitukset</a>
+          <ul class="child">
+            <li><a href="Tehtava13.html">Laskutoimitukset</a></li>
+            <li><a href="Tehtava14.html">Strings</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Extra</a>
+          <ul class="child">
+            <li><a href="Tehtava15.html">Good Morning</a></li>
+            <li><a href="Tehtava16.html">Lotto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- TITLE -->
+
+    <div id="title">
+      <h1>LASKENTA- JA VERTAILUOPERAATTORIT</h1>
+      <br /><br />
+    </div>
+
+    <!-- CONTENT -->
+
+    <h2>Vertailuoperaattorit</h2>
+    <hr />
+    <p>
+      Operaattorit, jotka vertaavat arvoja ja palaavat totta tai vääriä.
+      Operaattorit sisältävät:>, <,> =, <=, === ja !==<br />
+    </p>
+    <ul>
+      <li>
+        <h3>Alle (<)</h3>
+        Palautuu totta, jos vasemmalla oleva arvo on pienempi kuin oikealla
+        oleva arvo, muuten se palauttaa väärän.
+        <h4>Esimerkiksi:</h4>
+        var x = 5;<br />
+        x < 8 (true);
+      </li>
+      <br />
+
+      <li>
+        <h3>Suurempi kuin (>)</h3>
+        Palaa totta, jos vasemmanpuoleinen arvo on suurempi kuin oikealla oleva
+        arvo, muuten se palauttaa väärän.
+        <h4>Esimerkiksi:</h4>
+        var x = 5; <br />
+        x > 8 (false);
+      </li>
+      <br />
+
+      <li>
+        <h3>Alle tai yhtä suuri (<=)</h3>
+        Palautuu totta, jos vasemmalla oleva arvo on pienempi tai yhtä suuri
+        kuin oikealla oleva arvo, muuten se palauttaa väärän.
+        <h4>Esimerkiksi:</h4>
+        var x = 5; <br />
+        x <= 8 (true);
+      </li>
+      <br />
+
+      <li>
+        <h3>Suurempi tai yhtä suuri (> =)</h3>
+        Palautuu totta, jos vasemmanpuoleinen arvo on suurempi tai yhtä suuri
+        kuin oikealla oleva arvo, muuten se palauttaa väärän.
+        <h4>Esimerkiksi:</h4>
+        var x = 5; <br />
+        x >= 8 (false);
+      </li>
+      <br />
+
+      <li>
+        <h3>Yhtä suuri (===)</h3>
+        Palaa totta, jos vasemmanpuoleinen arvo on yhtä suuri kuin oikealla
+        oleva arvo, muuten se palauttaa väärän.
+        <h4>Esimerkiksi:</h4>
+        var x = 5; <br />
+        x === 8 (false);<br />
+        x === 5 (true);<br />
+        x === "5" (false);
+      </li>
+      <br />
+
+      <li>
+        <h3>Ei yhtäläinen (! ==)</h3>
+        Palaa totta, jos vasemmalla oleva arvo ei ole sama kuin oikealla oleva
+        arvo, muuten se palauttaa väärän.
+        <h4>Esimerkiksi:</h4>
+        var x = 5; <br />
+        x !== 8 (true);<br />
+        x !== 5 (false);<br />
+        x !== "5" (true);
+      </li>
+      <br />
+    </ul>
+
+    <h2>Loogiset operaattorit</h2>
+    <hr />
+    <p>
+      Operaattorit, jotka yhdistävät useita boolen ilmaisuja tai arvoja ja
+      tarjoavat yhden boolen ulostulon. Operaattoreita ovat: &&, || ja ! .
+    </p>
+    <br />
+    <ul>
+      <li>
+        <h3>&& (ja)</h3>
+        Tämä operaattori on totuus (toimi kuten totta), jos ja vain, jos
+        ilmaisut molemmilla puolilla ovat totta.
+        <h4>Esimerkiksi:</h4>
+        var x = 6;<br />
+        var y = 3;<br />
+        (x < 10 && y > 1) - true;
+      </li>
+      <br />
+
+      <li>
+        <h3>|| (tai)</h3>
+        Tämä operaattori on totuus, jos sen molemmilla puolilla oleva ilmaisu on
+        totta. Muuten se on väärä (toimi kuin väärä).
+        <h4>Esimerkiksi:</h4>
+        var x = 6;<br />
+        var y = 3;<br />
+        (x == 5 || y == 5) - false;
+      </li>
+      <br />
+    </ul>
+
+
+
+<!-- FOOTER -->
+</p>
+
+<footer>
+  <p>\ / / Vasil Ivanov &#169; 2019</p>
+</footer>
+
+
+  </body>
+</html>

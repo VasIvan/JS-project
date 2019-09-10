@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tehtava10</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="jsstyle.css" />
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li class="parent">
+          <a href="#">Opi !</a>
+          <ul class="child">
+            <li>
+              <a href="Tehtava1.html"
+                >Syntaksi, muuttujat, tilat ja kommentit</a
+              >
+            </li>
+            <li><a href="Tehtava2.html">Tietotyypit</a></li>
+            <li><a href="Tehtava3.html">Laskenta operaattorit</a></li>
+            <li><a href="Tehtava4.html">Vertailu operaattorit</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">If / Switch / Array</a>
+          <ul class="child">
+            <li><a href="Tehtava5.html">If lause</a></li>
+            <li><a href="Tehtava6.html">Switch case</a></li>
+            <li><a href="Tehtava7.html">Array</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Functions</a>
+          <ul class="child">
+            <li><a href="Tehtava8.html">Funtion()</a></li>
+            <li><a href="Tehtava9.html">Funtion(x,y)</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">(Do) While / For</a>
+          <ul class="child">
+            <li><a href="Tehtava10.html">While</a></li>
+            <li><a href="Tehtava11.html">For</a></li>
+            <li><a href="Tehtava12.html">Do While</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Laskutoimitukset</a>
+          <ul class="child">
+            <li><a href="Tehtava13.html">Laskutoimitukset</a></li>
+            <li><a href="Tehtava14.html">Strings</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Extra</a>
+          <ul class="child">
+            <li><a href="Tehtava15.html">Good Morning</a></li>
+            <li><a href="Tehtava16.html">Lotto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- TITLE -->
+
+    <div id="title">
+      <h1>WHILE</h1>
+      <br /><br />
+    </div>
+
+    <!--CONTENT-->
+
+
+    <div class="gr-cont">
+      <!-- CONTENT / LEFT / BUTTON-->
+      <div class="gr-it">
+        <p id="textbtn">
+          Press Here -->
+          <button style="font-size:24px" onclick="myButton()" class="button">
+            <i class="fa fa-power-off"></i>
+          </button>
+          <-- Press Here
+        </p>
+
+        <p id="result"></p>
+      </div>
+
+
+
+
+
+ <!-- CONTENT / RIGHT / SCRIPT-->
+ <div class="gr-it">
+  <h2>Script</h2>
+  <div id="code">
+    
+    &lt;script&gt; <br />
+    <br />
+    function myButton() { <br />
+    var a = 10; <br />
+    var c = ''; <br />
+    <br />
+
+    while (a < 100) { <br />
+
+    if (a % 10 == 0){ c += '&lt;br&gt;'; } <br />
+
+    c += a + ' '; <br />
+    a++; <br />
+    } <br />
+
+    document.getElementById('result').innerHTML = c; <br />
+
+    } <br />
+    <br />
+
+    &lt;/script&gt;
+
+    <br><br><br><br><br>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+    
+
+
+
+
+<!-- FOOTER -->
+
+    <footer>
+      <p>\ / / Vasil Ivanov &#169; 2019</p>
+    </footer>
+
+
+
+
+
+    <script>
+      function myButton() {
+        var a = 10;
+        var c = "";
+
+        while (a < 100) {
+          if (a % 10 == 0) {
+            c += "<br>";
+          }
+
+          c += a + " ";
+          a++;
+        }
+
+        document.getElementById("result").innerHTML = c;
+      }
+    </script>
+
+    
+  
+
+  <!--
+
+  <body>
+    <input type="button" value="While" onclick="myButton()" />
+
+    <script>
+      function myButton() {
+        var a = 10;
+
+        while (a < 100) {
+          document.write(a + " ");
+          a++;
+
+          if (a % 10 == 0) {
+            document.write("<br>");
+          }
+        }
+      }
+    </script>
+
+
+  -->
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

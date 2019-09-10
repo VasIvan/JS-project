@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tehtava8</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="jsstyle.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li class="parent">
+          <a href="#">Opi !</a>
+          <ul class="child">
+            <li>
+              <a href="Tehtava1.html"
+                >Syntaksi, muuttujat, tilat ja kommentit</a
+              >
+            </li>
+            <li><a href="Tehtava2.html">Tietotyypit</a></li>
+            <li><a href="Tehtava3.html">Laskenta operaattorit</a></li>
+            <li><a href="Tehtava4.html">Vertailu operaattorit</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">If / Switch / Array</a>
+          <ul class="child">
+            <li><a href="Tehtava5.html">If lause</a></li>
+            <li><a href="Tehtava6.html">Switch case</a></li>
+            <li><a href="Tehtava7.html">Array</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Functions</a>
+          <ul class="child">
+            <li><a href="Tehtava8.html">Funtion()</a></li>
+            <li><a href="Tehtava9.html">Funtion(x,y)</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">(Do) While / For</a>
+          <ul class="child">
+            <li><a href="Tehtava10.html">While</a></li>
+            <li><a href="Tehtava11.html">For</a></li>
+            <li><a href="Tehtava12.html">Do While</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Laskutoimitukset</a>
+          <ul class="child">
+            <li><a href="Tehtava13.html">Laskutoimitukset</a></li>
+            <li><a href="Tehtava14.html">Strings</a></li>
+          </ul>
+        </li>
+        <li class="parent">
+          <a href="#">Extra</a>
+          <ul class="child">
+            <li><a href="Tehtava15.html">Good Morning</a></li>
+            <li><a href="Tehtava16.html">Lotto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- TITLE -->
+
+    <div id="title">
+      <h1>KERTOTAULU</h1>
+      <br /><br />
+    </div>
+
+    <!--CONTENT-->
+
+    <div class="gr-cont">
+      <!-- CONTENT / LEFT / BUTTON-->
+      <div class="gr-it">
+        <h2>Hei! Tervetuloa laskemaan kertotaulua!</h2>
+
+        <select id="num">
+          <option value="1" id="">1</option>
+          <option value="2" id="">2</option>
+          <option value="3" id="">3</option>
+          <option value="4" id="">4</option>
+          <option value="5" id="">5</option>
+          <option value="6" id="">6</option>
+          <option value="7" id="">7</option>
+          <option value="8" id="">8</option>
+          <option value="9" id="">9</option>
+          <option value="10" id="">10</option>
+        </select>
+
+        <p id="textbtn">
+          Press Here -->
+          <button style="font-size:24px" onclick="myFunction()" class="button">
+            <i class="fa fa-power-off"></i>
+          </button>
+          <-- Press Here
+        </p>
+
+        <p id="result"></p>
+      </div>
+
+      <!-- CONTENT / RIGHT / SCRIPT-->
+      <div class="gr-it">
+        <h2>Script</h2>
+        <div id="code">
+          &lt;script&gt; <br />
+          <br />
+
+          function myFunction(){ <br />
+
+          var a = document.getElementById('num').value; <br />
+          var b; <br />
+          var c = ""; <br />
+
+          for (b = 1; b <= 10; b++){ c += a + ' * ' + b + ' = ' + a * b +
+          '&lt;br&gt;'; } <br />
+
+          document.getElementById('result').innerHTML = c; <br />
+
+          }
+
+          <br />
+          <br />
+
+          &lt;/script&gt;
+
+          <br /><br /><br /> <br><br><br><br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>\ / / Vasil Ivanov &#169; 2019</p>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var a = document.getElementById("num").value;
+        var b;
+        var c = "";
+
+        for (b = 1; b <= 10; b++) {
+          c += a + " * " + b + " = " + a * b + "<br>";
+        }
+
+        document.getElementById("result").innerHTML = c;
+      }
+    </script>
+  </body>
+</html>
